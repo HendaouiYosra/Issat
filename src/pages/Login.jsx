@@ -2,7 +2,7 @@ import { Link, useNavigate } from "react-router-dom";
 import styles from "./Login.module.css";
 import { useContext, useState } from "react";
 import Logo from "../components/Logo";
-import { auth } from "../firebase";
+import { auth, upload } from "../firebase";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import AuthContext from "../contexts/AuthContext";
 
@@ -11,7 +11,7 @@ export default function Login() {
   const [email, setEmail] = useState("salsa@example.com");
   const [password, setPassword] = useState("qwerty");
   const [error, setError] = useState("");
-  const { dispatch } = useContext(AuthContext);
+  const { dispatch, currentUser } = useContext(AuthContext);
   function getErrorMessage(errorCode) {
     const errorMessages = {
       "auth/invalid-email": "L'adresse e-mail est mal formatée.",
@@ -24,13 +24,15 @@ export default function Login() {
       errorMessages[errorCode] || "Une erreur est survenue. Veuillez réessayer."
     );
   }
+
   const signIn = (e) => {
     e.preventDefault();
     setError("");
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         dispatch({ type: "LOGIN", payload: userCredential.user });
-        
+        const defaultPhotoPath = "assets/s1.jpg";
+        upload(defaultPhotoPath, "Fares Gabsi");
         navigate("/home");
       })
       .catch((error) => {
