@@ -1,0 +1,30 @@
+.container {
+  margin: 5% 0;
+  background-color: white;
+  width: 90%;
+  border-radius: 10px;
+  font-family: "jost";
+
+  padding: 3%;
+}
+
+.articles {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.imageArticle {
+  width: auto;
+  height: 40px;
+}
+.article {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

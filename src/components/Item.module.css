@@ -1,0 +1,20 @@
+img {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 1rem; /* Added margin-right to create space between image and text */
+}
+
+.container {
+  display: flex; /* Changed display to flex */
+  align-items: right; /* Center vertically */
+  font-size: 1rem;
+  padding: 0.1rem 0.8rem;
+  color: aliceblue;
+
+}
+.title{
+font-family: 'jost';
+}
+.container:hover {
+  text-shadow: 0px 8px 8px rgba(235, 235, 235, 0.838);
+} 

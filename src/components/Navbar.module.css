@@ -1,0 +1,32 @@
+.container {
+  width: 20vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: #24445b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+  min-height: fit-content;
+}
+
+.logoContainer {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  height: 80vh;
+  min-height: fit-content;
+  margin-top: 5rem; /* Ajustez cette valeur selon l'espace souhaité entre le logo et le contenu */
+}
+.content > div {
+  margin-bottom: 4vh; /* Ajouter de l'espace entre les divs "hello" */
+}

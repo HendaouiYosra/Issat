@@ -1,0 +1,30 @@
+/* Home.module.css */
+*{
+  margin: 0 0;
+  padding: 0 0;
+}
+
+.container {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .navbar {
+    flex: 0 0 20vh; /* Navbar width */
+  
+    /* Enable vertical scrolling if needed */
+  }
+  
+  .mainContent {
+    flex: 1; /* Main content will take up remaining space */
+ padding-left: 12vw;/* Adjust this value to match the width of the navbar */
+    background-color: #f0f0f0; /* Example background color for main content */
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+  

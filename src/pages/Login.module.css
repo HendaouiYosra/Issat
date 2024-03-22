@@ -1,0 +1,79 @@
+/* Login.module.css */
+
+.login {
+  background-color: #24445b;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logoContainer {
+  margin-top: 2rem;
+}
+.form {
+  background-color: beige;
+  border-radius: 7px;
+  padding: 2rem 3rem;
+  width: 25rem;
+  margin: 5rem auto;
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Arrange items vertically */
+  align-items: center; /* Center items horizontally */
+}
+.title {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-family: "Inter";
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  display: flex; /* Use flexbox */
+
+  flex-direction: column; /* Arrange items vertically */
+  align-items: left; /* Center items horizontally */
+  margin-bottom: 1rem; /* Add margin-bottom to create space between label-input pairs */
+}
+label {
+  width: 7rem; /* Largeur des labels */
+  font-family: "IBM Plex Serif";
+}
+
+.button-container {
+  text-align: center;
+}
+.dropDown {
+  border-style: none;
+  padding: 0.5rem;
+  background-color: #d6e0e7b4;
+  border-radius: 1rem;
+}
+.option {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border-radius: 5px;
+}
+.inputelement {
+  width: 15rem;
+  height: 3rem;
+  background: white;
+  border-radius: 10px;
+  border: 2px #87a8c0 solid;
+  text-align: center;
+  font-family: "IBM Plex Serif";
+}
+.button {
+  border-radius: 20px;
+  background-color: #24445b;
+  color: white;
+  width: 10rem;
+  margin-top: 1rem;
+  padding: 0.2rem;
+  font-family: "Jost";
+}
+.error{
+  color: red;
+  font-family: "IBM Plex Serif";
+  margin-top: 0.2rem;
+}
