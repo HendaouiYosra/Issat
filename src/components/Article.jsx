@@ -1,4 +1,22 @@
 import styles from "./Article.module.css"
+function Article({ title, description, imageUrl }) {
+    return (
+        <div className={styles.container}>
+            {imageUrl && <img className={styles.articleImg} src={imageUrl} alt="" />}
+            <h5>{title}</h5>
+            <p>{description}</p>
+        </div>
+    );
+}
+
+export default Article;
+
+
+
+
+
+// Yosra's ui
+/*import styles from "./Article.module.css"
 function Article() {
     return (
         <div className={styles.container}>
@@ -10,4 +28,4 @@ function Article() {
     )
 }
 
-export default Article
+export default Article*/

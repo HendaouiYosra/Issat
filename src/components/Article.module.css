@@ -2,6 +2,7 @@
     background-color: rgb(239, 239, 229);
     height: fit-content;
     width: 33%;
+    padding: 10px;
 }
 .articleImg{
     height: auto;
