@@ -1,11 +1,15 @@
 /* Login.module.css */
 
 .login {
-  background-color: #24445b;
+  background-image: linear-gradient(rgba(36, 68, 91, 0.91), rgba(36, 68, 91, 0.932)), url("../../public/assets/back1.jpg");
+  background-size: cover; /* Ensure the image covers the entire background */
+  background-position: center; /* Center the background image */
+
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .logoContainer {
   margin-top: 2rem;
@@ -72,7 +76,7 @@ label {
   padding: 0.2rem;
   font-family: "Jost";
 }
-.error{
+.error {
   color: red;
   font-family: "IBM Plex Serif";
   margin-top: 0.2rem;

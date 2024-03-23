@@ -32,7 +32,7 @@ export default function Login() {
       .then((userCredential) => {
         dispatch({ type: "LOGIN", payload: userCredential.user });
         const defaultPhotoPath = "assets/s1.jpg";
-        upload(defaultPhotoPath, "Fares Gabsi");
+     
         navigate("/home");
       })
       .catch((error) => {
